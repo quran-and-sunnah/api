@@ -9,7 +9,7 @@ on:
 jobs:
   lint:
     name: Run ESLint
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -27,7 +27,7 @@ jobs:
 
   type-check:
     name: Check for TypeScript errors
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: lint
     steps:
       - name: Checkout Code
